@@ -919,14 +919,25 @@
           transform: none;
         }
       }
+
+      /* ---------- 404 page (no scroll) ---------- */
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+      }
       .notfound {
-        min-height: 100vh;
+        height: 100vh;
+        height: 100dvh;
+        min-height: 0;
+        overflow: hidden;
         display: grid;
         grid-template-columns: 1.1fr 1fr;
         background: #08271e;
         color: #fff;
       }
       .nf-art {
+        min-height: 0;
         background:
           linear-gradient(#08271e70, #08271e70),
           url("assets/editorial-books (1).webp") center/cover;
@@ -935,10 +946,13 @@
       }
       .book404 {
         font-size: clamp(110px, 18vw, 260px);
+        line-height: 1;
         color: #e0c476;
         text-shadow: 10px 10px #092218;
       }
       .nf-copy {
+        min-height: 0;
+        overflow-y: auto; /* safety net for very short screens, e.g. landscape phones */
         padding: 60px;
         display: flex;
         flex-direction: column;
@@ -955,15 +969,18 @@
       @media (max-width: 700px) {
         .notfound {
           grid-template-columns: 1fr;
-        }
-        .nf-art {
-          min-height: 42vh;
+          grid-template-rows: 36% 1fr;
         }
         .nf-copy {
-          padding: 35px;
+          padding: 24px 28px;
         }
         .nf-copy img {
-          margin-bottom: 40px;
+          width: 120px;
+          margin-bottom: 18px;
+        }
+        .nf-copy h1 {
+          font-size: clamp(38px, 11vw, 52px);
+          margin: 10px 0;
         }
       }
     </style>

@@ -1060,6 +1060,37 @@
       .dark .faq-item {
         border-bottom-color: #ffffff2e;
       }
+
+      .visit-card p {
+    display: inline-block;
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 5px ;
+}
+
+/* Gold underline animation */
+.visit-card p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: #c8a85d;
+    transition: width 0.35s ease;
+}
+
+/* Individual paragraph hover */
+.visit-card p:hover {
+    color: #c8a85d;
+    transform: translateX(6px);
+}
+
+.visit-card p:hover::after {
+    width: 100%;
+}
     </style>
   </head>
   <body>
@@ -1084,7 +1115,7 @@
     </div>
     <div class="overlay"></div>
     <div class="searchbar">
-      <form action="shop.html">
+      <form action="404.html">
         <input name="q" aria-label="Search books" placeholder="Search by title or author" /><button>Search</button>
       </form>
     </div>
@@ -1250,7 +1281,7 @@
    <footer>
       <div class="footer-grid">
         <div>
-          <img class="footer-logo" src="./assets/stackly-logo-white (1).webp" alt="Stackly" />
+          <a href="index.html"><img class="footer-logo" src="./assets/stackly-logo-white (1).webp" alt="Stackly" /></a>
           <p>Stories, ideas and knowledge for every curious mind.</p>
           <div class="social">
             <a href="404.html" aria-label="Facebook">f</a><a href="404.html" aria-label="Instagram">◎</a
@@ -1267,7 +1298,7 @@
           <a href="404.html">New Arrivals</a><a href="404.html">Best Sellers</a><a href="404.html">Featured Books</a
           ><a href="404.html">Offers</a><a href="404.html">Wishlist</a>
         </div>
-        <div>
+        <div class="visit-card">
           <h3>Visit</h3>
           <p>12 Literary Lane, Bengaluru</p>
           <p>+91 98765 43210</p>

@@ -1271,7 +1271,9 @@
           toast("Your cart is empty.");
           return;
         }
-        toast("Checkout is ready for your order details.");
+        localStorage.removeItem("cartItems");
+        renderCart();
+        toast("Thank you! Your order has been placed.");
       });
       renderCart();
     </script>
