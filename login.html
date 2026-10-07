@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Login — Stackly Book Store</title>
     <meta name="description" content="Sign in or create your Stackly Book Store account." />
-    <link rel="icon" href="../favicon.png" />
+    <link rel="icon" href="favicon.png" />
     <style>
       * {
         box-sizing: border-box;
@@ -208,7 +208,7 @@
         display: flex;
         align-items: center;
         padding: 120px clamp(24px, 8vw, 130px) 70px;
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .hero-content {
         max-width: 720px;
@@ -261,7 +261,7 @@
         padding: 160px clamp(24px, 8vw, 130px) 70px;
         display: flex;
         align-items: end;
-        background-image: url("assets/editorial-books.webp");
+        background-image: url("assets/editorial-books (1).webp");
       }
       .page-hero h1 {
         font-size: clamp(48px, 7vw, 82px);
@@ -420,7 +420,7 @@
       }
       .promo {
         min-height: 500px;
-        background: url("assets/editorial-books.webp") center/cover;
+        background: url("assets/editorial-books (1).webp") center/cover;
         display: flex;
         align-items: center;
         padding: 50px;
@@ -471,13 +471,13 @@
         margin: 0;
       }
       .category:nth-child(3n + 1) {
-        background-image: url("assets/books-display.webp");
+        background-image: url("assets/categories-mosaic (1).webp");
       }
       .category:nth-child(3n + 2) {
-        background-image: url("assets/reader.webp");
+        background-image: url("assets/reader (1).webp");
       }
       .category:nth-child(3n) {
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .split {
         display: grid;
@@ -553,7 +553,7 @@
         color: #fff;
         background:
           linear-gradient(#082018a6, #082018d9),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
       }
       .final h2 {
         font-size: clamp(50px, 8vw, 95px);
@@ -661,7 +661,7 @@
         min-height: 380px;
         background:
           linear-gradient(#17382ccf, #17382ccf),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
         color: #fff;
         display: grid;
         place-items: center;
@@ -933,7 +933,7 @@
         inset: 0 50% 0 0;
         background:
           linear-gradient(#061b1550, #061b15dc),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
         padding: 45px;
         display: flex;
         flex-direction: column;
@@ -1064,7 +1064,7 @@
   <body>
     <main class="auth">
       <section class="auth-visual">
-        <img src="assets/logo.webp" alt="Stackly" /><a class="go-home" href="index.html">← Go Home</a>
+        <img src="./assets/stackly-logo-white (1).webp" alt="Stackly" /><a class="go-home" href="index.html">← Go Home</a>
         <div>
           <span class="eyebrow">Your personal library</span>
           <h1>Your Next Favorite Book Awaits.</h1>
@@ -1088,11 +1088,11 @@
           </div>
           <label>Email<input name="email" type="email" autocomplete="email" /></label
           ><label>Password<input name="password" type="password" autocomplete="current-password" /></label
-          ><label class="check"><input type="checkbox" /> Remember me</label><a href="#">Forgot Password?</a>
+          ><label class="check"><input type="checkbox" /> Remember me</label><a href="404.html">Forgot Password?</a>
           <div class="auth-msg"></div>
           <button class="btn">Login</button>
           <p class="auth-note">Or continue with</p>
-          <div class="social-login"><button type="button">G Google</button><button type="button">● Apple</button></div>
+          <div class="social-login"><button onclick="window.location.href='404.html'" type="button">G Google</button><button onclick="window.location.href='404.html'" type="button">● Apple</button></div>
         </form>
         <form class="auth-form" id="signup">
           <h2>Create your account</h2>

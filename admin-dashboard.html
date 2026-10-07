@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Admin Dashboard — Stackly Book Store</title>
     <meta name="description" content="Admin Dashboard for Stackly Book Store." />
-    <link rel="icon" href="../favicon.png" />
+    <link rel="icon" href="favicon.png" />
     <style>
       * {
         box-sizing: border-box;
@@ -208,7 +208,7 @@
         display: flex;
         align-items: center;
         padding: 120px clamp(24px, 8vw, 130px) 70px;
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .hero-content {
         max-width: 720px;
@@ -261,7 +261,7 @@
         padding: 160px clamp(24px, 8vw, 130px) 70px;
         display: flex;
         align-items: end;
-        background-image: url("assets/editorial-books.webp");
+        background-image: url("assets/editorial-books (1).webp");
       }
       .page-hero h1 {
         font-size: clamp(48px, 7vw, 82px);
@@ -420,7 +420,7 @@
       }
       .promo {
         min-height: 500px;
-        background: url("assets/editorial-books.webp") center/cover;
+        background: url("assets/editorial-books (1).webp") center/cover;
         display: flex;
         align-items: center;
         padding: 50px;
@@ -471,13 +471,13 @@
         margin: 0;
       }
       .category:nth-child(3n + 1) {
-        background-image: url("assets/books-display.webp");
+        background-image: url("assets/categories-mosaic (1).webp");
       }
       .category:nth-child(3n + 2) {
-        background-image: url("assets/reader.webp");
+        background-image: url("assets/reader (1).webp");
       }
       .category:nth-child(3n) {
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .split {
         display: grid;
@@ -553,7 +553,7 @@
         color: #fff;
         background:
           linear-gradient(#082018a6, #082018d9),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
       }
       .final h2 {
         font-size: clamp(50px, 8vw, 95px);
@@ -661,7 +661,7 @@
         min-height: 380px;
         background:
           linear-gradient(#17382ccf, #17382ccf),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
         color: #fff;
         display: grid;
         place-items: center;
@@ -1124,12 +1124,324 @@
           grid-template-columns: 1fr;
         }
       }
+
+      /* =========================
+         ADMIN DASHBOARD: MOBILE
+         ========================= */
+      .sidebar-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 24px;
+      }
+      .sidebar-top img {
+        margin: 0 0 0 14px;
+        width: 140px;
+      }
+      .sidebar-close {
+        display: none;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ffffff33;
+        border-radius: 8px;
+        background: #ffffff12;
+        color: #f1d98d;
+        font-size: 18px;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .sidebar-close:hover {
+        background: #c8a85d;
+        color: #09261d;
+      }
+      .dash-head-left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        min-width: 0;
+      }
+      .dash-title {
+        min-width: 0;
+      }
+      .dash-main {
+        min-width: 0;
+      }
+      .mobile-dash-menu {
+        display: none;
+      }
+      @media (max-width: 900px) {
+        .sidebar {
+          width: min(82vw, 300px);
+          box-shadow: 10px 0 40px #0006;
+          padding: 20px 16px 30px;
+        }
+        .sidebar-close {
+          display: grid;
+          place-items: center;
+        }
+        .side-link {
+          padding: 14px;
+          font-size: 15px;
+          border-radius: 6px;
+        }
+        .side-overlay.open {
+          backdrop-filter: blur(2px);
+        }
+        .dash-main {
+          padding: 0 20px 28px;
+        }
+        .dash-head {
+          position: sticky;
+          top: 0;
+          z-index: 30;
+          background: #edf0e9;
+          padding: 14px 0;
+          margin-bottom: 16px;
+          border-bottom: 1px solid #d5d5c8;
+        }
+        .mobile-dash-menu {
+          display: grid;
+          place-items: center;
+          flex: none;
+          width: 46px;
+          height: 46px;
+          padding: 0;
+          border-radius: 10px;
+          background: #0a2a21;
+          color: #d7b96e;
+          cursor: pointer;
+          box-shadow: 0 6px 16px #08271e33;
+        }
+        .mobile-dash-menu:hover {
+          background: #c8a85d;
+          color: #09261d;
+        }
+        .dash-head h1 {
+          font-size: 28px;
+          overflow-wrap: anywhere;
+        }
+        .panel {
+          padding: 18px;
+        }
+        .panel h2 {
+          font-size: 22px;
+        }
+      }
+      @media (max-width: 600px) {
+        .dash-main {
+          padding: 0 14px 24px;
+        }
+        .dash-head h1 {
+          font-size: 22px;
+          line-height: 1.2;
+        }
+        .kpis {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+        .kpi {
+          padding: 16px 14px;
+        }
+        .kpi b {
+          font-size: 22px;
+          overflow-wrap: anywhere;
+        }
+        .kpi small,
+        .kpi span {
+          font-size: 12px;
+        }
+        .dash-grid {
+          gap: 14px;
+          margin-top: 14px;
+        }
+        .panel {
+          padding: 16px 14px;
+        }
+        .panel .panel {
+          padding: 0;
+          border: 0;
+          background: none;
+          margin-top: 16px !important;
+        }
+        .bars {
+          gap: 8px;
+          height: 160px;
+        }
+        .bar:before {
+          font-size: 10px;
+          top: -20px;
+        }
+        .book-mini {
+          grid-template-columns: 40px 1fr auto;
+          gap: 10px;
+        }
+        .book-mini span {
+          font-size: 11px;
+        }
+        /* tables become readable cards */
+        table {
+          min-width: 0;
+        }
+        thead {
+          display: none;
+        }
+        table,
+        tbody,
+        tr,
+        td {
+          display: block;
+          width: 100%;
+        }
+        tr {
+          margin-bottom: 10px;
+          padding: 4px 12px;
+          border: 1px solid #e0ddd0;
+          background: #fbfaf6;
+        }
+        td {
+          display: flex;
+          justify-content: space-between;
+          gap: 14px;
+          padding: 9px 0;
+          text-align: right;
+          border-bottom: 1px dashed #ddd;
+        }
+        td:last-child {
+          border-bottom: 0;
+        }
+        td:before {
+          content: attr(data-label);
+          font-weight: 700;
+          color: #667067;
+          text-align: left;
+        }
+        .toast {
+          left: 14px;
+          right: 14px;
+          bottom: 14px;
+        }
+      }
+      @media (max-width: 380px) {
+        .kpis {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* SPECIAL LOGOUT BUTTON */
+      .side-link.logout {
+        margin-top: 18px !important;
+        background: rgba(220, 70, 60, 0.08) !important;
+        color: #ff8b80 !important;
+        border: 1px solid rgba(220, 70, 60, 0.35) !important;
+        border-radius: 8px !important;
+        transform: none !important;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease,
+          border-color 0.3s ease,
+          box-shadow 0.3s ease,
+          transform 0.3s ease !important;
+      }
+      .side-link.logout:hover {
+        background: #d94b3f !important;
+        color: #ffffff !important;
+        border-color: #d94b3f !important;
+        transform: translateY(-3px) !important;
+        box-shadow:
+          0 8px 22px rgba(217, 75, 63, 0.28),
+          0 0 0 1px rgba(255, 255, 255, 0.05) inset !important;
+      }
+      .side-link.logout:active {
+        transform: translateY(0) !important;
+        box-shadow: none !important;
+      }
+      .side-link.logout::after {
+        content: "↗";
+        float: right;
+        font-size: 16px;
+        opacity: 0.7;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+      .side-link.logout:hover::after {
+        opacity: 1;
+        transform: translate(3px, -3px);
+      }
+
+      /* Profile cards: full name + full email on mobile */
+      .user-card {
+        display: none;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+      }
+      .user-avatar {
+        flex: none;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: #c8a85d;
+        color: #09261d;
+        font: 700 17px Arial, sans-serif;
+      }
+      .user-text {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.35;
+      }
+      .user-text b {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+      }
+      .user-text span {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+        word-break: break-all;
+      }
+      .user-role {
+        align-self: flex-start;
+        margin: 3px 0 4px;
+        padding: 2px 8px;
+        border-radius: 20px;
+        background: #c8a85d;
+        color: #09261d;
+        font: 700 10px Arial, sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .sidebar-user {
+        padding: 14px;
+        margin: 0 0 16px;
+        border: 1px solid #ffffff26;
+        background: #ffffff0d;
+        color: #f7f0df;
+      }
+      .sidebar-user .user-text span {
+        color: #ccc4b4;
+      }
+      .page-user {
+        padding: 14px;
+        margin: 0 0 16px;
+        background: #fff;
+        border: 1px solid #d5d5c8;
+      }
+      .page-user .user-text span {
+        color: #667067;
+      }
+      @media (max-width: 900px) {
+        .sidebar-user,
+        .page-user {
+          display: flex;
+        }
+      }
     </style>
   </head>
   <body>
     <main class="dashboard">
-      <aside class="sidebar">
-        <img src="assets/logo.webp" alt="Stackly" /><button class="side-link active" data-view="0">Dashboard</button
+      <aside class="sidebar" id="admin-sidebar">
+        <div class="sidebar-top"><img src="./assets/stackly-logo-white (1).webp" alt="Stackly" /><button class="sidebar-close" aria-label="Close menu">✕</button></div><div class="user-card sidebar-user"><div class="user-avatar" data-avatar>A</div><div class="user-text"><b data-uname>Reader</b><small class="user-role" data-urole></small><span data-uemail></span></div></div><button class="side-link active" data-view="0">Dashboard</button
         ><button class="side-link" data-view="1">Overview</button><button class="side-link" data-view="2">Books</button
         ><button class="side-link" data-view="3">Categories</button
         ><button class="side-link" data-view="4">Orders</button
@@ -1142,14 +1454,23 @@
       <div class="side-overlay"></div>
       <div class="dash-main">
         <header class="dash-head">
-          <div>
-            <button class="mobile-dash-menu">☰ Menu</button><small>Admin Dashboard</small>
-            <h1 id="welcome">Welcome back</h1>
+          <div class="dash-head-left">
+            <button class="mobile-dash-menu" aria-label="Open menu" aria-expanded="false" aria-controls="admin-sidebar">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+            </button>
+            <div class="dash-title">
+              <small>Admin Dashboard</small>
+              <h1 id="welcome">Welcome back</h1>
+            </div>
           </div>
           <div class="profile-chip">
             <b id="dash-name">Reader</b><small id="dash-meta" style="display: block"></small>
           </div>
         </header>
+        <div class="user-card page-user">
+          <div class="user-avatar" data-avatar>A</div>
+          <div class="user-text"><b data-uname>Reader</b><small class="user-role" data-urole></small><span data-uemail></span></div>
+        </div>
         <section class="dash-view active">
           <div class="kpis">
             <article class="kpi"><small>Total Books</small><b>10,248</b><span>↑ this month</span></article>
@@ -1529,26 +1850,44 @@
         email = localStorage.getItem("userEmail") || "";
       $("#welcome").textContent = "Welcome back, " + name.split(" ")[0] + "!";
       $("#dash-name").textContent = name;
+      $$("[data-uname]").forEach((x) => (x.textContent = name));
+      $$("[data-urole]").forEach((x) => (x.textContent = expected[0].toUpperCase() + expected.slice(1)));
+      $$("[data-uemail]").forEach((x) => (x.textContent = email || "No email saved"));
+      $$("[data-avatar]").forEach((x) => (x.textContent = (name.trim()[0] || "A").toUpperCase()));
       $("#dash-meta").textContent = expected[0].toUpperCase() + expected.slice(1) + " · " + email;
       $$(".side-link[data-view]").forEach((b) =>
         b.addEventListener("click", () => {
           $$(".side-link").forEach((x) => x.classList.remove("active"));
           b.classList.add("active");
           $$(".dash-view").forEach((v, i) => v.classList.toggle("active", i === +b.dataset.view));
-          $(".sidebar").classList.remove("open");
-          $(".side-overlay").classList.remove("open");
+          closeSide();
         }),
       );
-      $(".mobile-dash-menu").addEventListener("click", () => {
+      function openSide() {
         $(".sidebar").classList.add("open");
         $(".side-overlay").classList.add("open");
-      });
-      $(".side-overlay").addEventListener("click", () => {
+        document.body.classList.add("menu-open");
+        $(".mobile-dash-menu").setAttribute("aria-expanded", "true");
+      }
+      function closeSide() {
         $(".sidebar").classList.remove("open");
         $(".side-overlay").classList.remove("open");
-      });
+        document.body.classList.remove("menu-open");
+        $(".mobile-dash-menu").setAttribute("aria-expanded", "false");
+      }
+      $(".mobile-dash-menu").addEventListener("click", openSide);
+      $(".sidebar-close").addEventListener("click", closeSide);
+      $(".side-overlay").addEventListener("click", closeSide);
       addEventListener("keydown", (e) => {
-        if (e.key === "Escape") $(".side-overlay").click();
+        if (e.key === "Escape") closeSide();
+      });
+      addEventListener("resize", () => {
+        if (innerWidth > 900) closeSide();
+      });
+      // label table cells so tables can turn into cards on small screens
+      $$("table").forEach((t) => {
+        const heads = $$("th", t).map((h) => h.textContent.trim());
+        $$("tbody tr", t).forEach((r) => $$("td", r).forEach((td, i) => (td.dataset.label = heads[i] || "")));
       });
       $(".logout").addEventListener("click", () => {
         ["isLoggedIn", "userRole", "userEmail", "userName"].forEach((x) => localStorage.removeItem(x));

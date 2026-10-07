@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Contact — Stackly Book Store</title>
     <meta name="description" content="Contact Stackly Book Store for orders, recommendations, and store information." />
-    <link rel="icon" href="../favicon.png" />
+    <link rel="icon" href="favicon.png" />
     <style>
       * {
         box-sizing: border-box;
@@ -208,7 +208,7 @@
         display: flex;
         align-items: center;
         padding: 120px clamp(24px, 8vw, 130px) 70px;
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .hero-content {
         max-width: 720px;
@@ -261,7 +261,7 @@
         padding: 160px clamp(24px, 8vw, 130px) 70px;
         display: flex;
         align-items: end;
-        background-image: url("assets/editorial-books.webp");
+        background-image: url("assets/editorial-books (1).webp");
       }
       .page-hero h1 {
         font-size: clamp(48px, 7vw, 82px);
@@ -420,7 +420,7 @@
       }
       .promo {
         min-height: 500px;
-        background: url("assets/editorial-books.webp") center/cover;
+        background: url("assets/editorial-books (1).webp") center/cover;
         display: flex;
         align-items: center;
         padding: 50px;
@@ -471,13 +471,13 @@
         margin: 0;
       }
       .category:nth-child(3n + 1) {
-        background-image: url("assets/books-display.webp");
+        background-image: url("assets/categories-mosaic (1).webp");
       }
       .category:nth-child(3n + 2) {
-        background-image: url("assets/reader.webp");
+        background-image: url("assets/reader (1).webp");
       }
       .category:nth-child(3n) {
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .split {
         display: grid;
@@ -553,7 +553,7 @@
         color: #fff;
         background:
           linear-gradient(#082018a6, #082018d9),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
       }
       .final h2 {
         font-size: clamp(50px, 8vw, 95px);
@@ -661,7 +661,7 @@
         min-height: 380px;
         background:
           linear-gradient(#17382ccf, #17382ccf),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
         color: #fff;
         display: grid;
         place-items: center;
@@ -920,13 +920,151 @@
         }
       }
       .page-hero {
-        background-image: url("assets/storefront.webp");
+        background-image: url("assets/storefront (1).webp");
+      }
+
+      /* Contact form: neat spacing */
+      .form {
+        gap: 18px;
+      }
+      .form h2 {
+        margin: 0 0 4px;
+        font-size: 34px;
+      }
+      .form-row {
+        gap: 18px;
+      }
+      .form label {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font: 600 13px Arial, sans-serif;
+        letter-spacing: 0.3px;
+        color: #2a342e;
+      }
+      .form input,
+      .form textarea {
+        display: block;
+        padding: 12px 14px;
+        font: 15px Georgia, serif;
+      }
+      .form textarea {
+        resize: vertical;
+        min-height: 130px;
+      }
+      .form input:focus,
+      .form textarea:focus {
+        outline: 2px solid #c8a85d;
+        outline-offset: 0;
+        border-color: #c8a85d;
+      }
+      .form .error {
+        min-height: 0;
+        margin: 0;
+      }
+      .form .error:empty {
+        display: none;
+      }
+      .form .btn {
+        justify-self: start;
+        min-width: 180px;
+      }
+      .contact-card {
+        padding: 18px 0;
+      }
+      .contact-card p {
+        margin: 4px 0 0;
+      }
+      /* Map + store info */
+      .map-grid {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr;
+        gap: 28px;
+        align-items: stretch;
+      }
+      .map-frame {
+        border: 1px solid #c8bd9e;
+        background: #e5dac5;
+        min-height: 420px;
+      }
+      .map-frame iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 420px;
+        border: 0;
+        display: block;
+      }
+      .visit-info {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 28px;
+        background: #f8f3e9;
+        border: 1px solid #c8bd9e;
+      }
+      .visit-item {
+        padding-bottom: 14px;
+        border-bottom: 1px solid #d7cdb7;
+      }
+      .visit-item p {
+        margin: 4px 0 0;
+        color: #5d5c52;
+      }
+      .visit-info .btn {
+        align-self: flex-start;
+        margin-top: auto;
+      }
+      .store-feature {
+        padding: 28px;
+        border: 1px solid #ffffff26;
+        background: #ffffff0d;
+        transition: 0.3s;
+      }
+      .store-feature:hover {
+        transform: translateY(-5px);
+        border-color: #c8a85d;
+      }
+      .store-feature .symbol {
+        font-size: 26px;
+        color: #d7b96e;
+      }
+      .store-feature h3 {
+        margin: 12px 0 6px;
+        font-size: 21px;
+        font-weight: 400;
+      }
+      .store-feature p {
+        margin: 0;
+        color: #ccc4b4;
+      }
+      @media (max-width: 900px) {
+        .map-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      /* FAQ text visible on dark background */
+      .faq-q {
+        color: #f7f0df;
+        font-family: Georgia, serif;
+      }
+      .faq-q span {
+        color: #d7b96e;
+        font-size: 24px;
+      }
+      .faq-q:hover {
+        color: #d7b96e;
+      }
+      .faq-a {
+        color: #ccc4b4;
+      }
+      .dark .faq-item {
+        border-bottom-color: #ffffff2e;
       }
     </style>
   </head>
   <body>
     <header class="site-header" id="header">
-      <a class="brand" href="index.html"><img src="assets/logo.webp" alt="Stackly Book Store" /></a>
+      <a class="brand" href="index.html"><img src="assets/stackly-logo-white (1).webp" alt="Stackly Book Store" /></a>
       <nav aria-label="Main navigation">
         <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="categories.html">Categories</a
         ><a href="about.html">About Us</a><a href="contact.html">Contact</a>
@@ -938,7 +1076,7 @@
       </div>
     </header>
     <div class="mobile-panel" aria-hidden="true">
-      <button class="close" aria-label="Close menu">×</button><img src="assets/logo.webp" alt="Stackly" /><a
+      <button class="close" aria-label="Close menu">×</button><img src="assets/stackly-logo-white (1).webp" alt="Stackly" /><a
         href="index.html"
         >Home</a
       ><a href="shop.html">Shop</a><a href="categories.html">Categories</a><a href="about.html">About Us</a
@@ -1020,35 +1158,103 @@
           </div>
         </div>
       </section>
-      <section class="map">
-        <div>
-          <span class="eyebrow">Visit our store</span>
-          <h2 class="section-title">12 Literary Lane, Bengaluru</h2>
-          <p>Settle into a reading chair, browse at your pace, and ask our booksellers anything.</p>
+      <section class="section find-us">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Find us</span>
+              <h2 class="section-title">Visit Our Bengaluru Store</h2>
+            </div>
+            <p class="section-copy">
+              Settle into a reading chair, browse at your own pace, and ask our booksellers anything.
+            </p>
+          </div>
+          <div class="map-grid">
+            <div class="map-frame">
+              <iframe
+                title="Stackly Book Store location map"
+                src="https://www.google.com/maps?q=Indiranagar,+Bengaluru,+Karnataka&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="visit-info">
+              <div class="visit-item">
+                <b>Address</b>
+                <p>Stackly Book Store, 12 Literary Lane, Indiranagar, Bengaluru</p>
+              </div>
+              <div class="visit-item">
+                <b>Store Hours</b>
+                <p>Mon–Sat · 9:00 am – 8:00 pm<br />Sunday · 10:00 am – 6:00 pm</p>
+              </div>
+              <div class="visit-item">
+                <b>Getting Here</b>
+                <p>Short walk from Indiranagar Metro. Street parking and nearby paid parking available.</p>
+              </div>
+              <a
+                class="btn"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Indiranagar+Bengaluru"
+                target="_blank"
+                rel="noopener"
+                >Get Directions</a
+              >
+            </div>
+          </div>
         </div>
       </section>
-      <section class="split">
-        <img loading="lazy" src="assets/storefront.webp" alt="Stackly Book Store storefront in Bengaluru" />
-        <div class="split-content">
-          <span class="eyebrow">A neighbourhood destination</span>
-          <h2>Stay, Browse, Discover.</h2>
-          <p>
-            Our Bengaluru store is designed for lingering. Browse our new-arrival table, ask for a personal
-            recommendation, or settle into a chair with a first chapter.
-          </p>
-          <p>We host author conversations, children’s reading circles and a monthly quiet reading evening.</p>
-          <a class="btn" href="mailto:hello@stackly.in">Plan a Visit</a>
+      <section class="section dark">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">In store</span>
+              <h2 class="section-title">More Than a Bookshop</h2>
+            </div>
+            <p class="section-copy">Everything we offer when you walk through our doors.</p>
+          </div>
+          <div class="grid grid-3 store-features">
+            <div class="store-feature">
+              <span class="symbol">✦</span>
+              <h3>Personal Recommendations</h3>
+              <p>Tell a bookseller what you last loved and leave with a shortlist chosen just for you.</p>
+            </div>
+            <div class="store-feature">
+              <span class="symbol">☕</span>
+              <h3>Reading Corner</h3>
+              <p>Comfortable chairs and quiet corners to read the first chapter before you decide.</p>
+            </div>
+            <div class="store-feature">
+              <span class="symbol">❖</span>
+              <h3>Author Events</h3>
+              <p>Book launches, signings and children’s reading circles every month.</p>
+            </div>
+            <div class="store-feature">
+              <span class="symbol">🎁</span>
+              <h3>Gift Wrapping</h3>
+              <p>Complimentary wrapping and handwritten notes for every gift purchase.</p>
+            </div>
+            <div class="store-feature">
+              <span class="symbol">▤</span>
+              <h3>Bulk &amp; Institutional Orders</h3>
+              <p>Special pricing for schools, libraries, offices and book clubs.</p>
+            </div>
+            <div class="store-feature">
+              <span class="symbol">✉</span>
+              <h3>Special Orders</h3>
+              <p>Can’t find a title? We will source it and let you know as soon as it arrives.</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+   <footer>
       <div class="footer-grid">
         <div>
-          <img class="footer-logo" src="assets/logo.webp" alt="Stackly" />
+          <img class="footer-logo" src="./assets/stackly-logo-white (1).webp" alt="Stackly" />
           <p>Stories, ideas and knowledge for every curious mind.</p>
           <div class="social">
-            <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a
-            ><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="LinkedIn">in</a>
+            <a href="404.html" aria-label="Facebook">f</a><a href="404.html" aria-label="Instagram">◎</a
+            ><a href="404.html" aria-label="X">𝕏</a><a href="404.html" aria-label="LinkedIn">in</a>
           </div>
         </div>
         <div>
@@ -1058,8 +1264,8 @@
         </div>
         <div>
           <h3>Book Store</h3>
-          <a href="shop.html">New Arrivals</a><a href="shop.html">Best Sellers</a><a href="shop.html">Featured Books</a
-          ><a href="shop.html">Offers</a><a href="shop.html">Wishlist</a>
+          <a href="404.html">New Arrivals</a><a href="404.html">Best Sellers</a><a href="404.html">Featured Books</a
+          ><a href="404.html">Offers</a><a href="404.html">Wishlist</a>
         </div>
         <div>
           <h3>Visit</h3>
@@ -1070,7 +1276,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Book Store. All rights reserved.</span><span>Privacy Policy · Terms of Use</span>
+        <span>© 2026 Stackly Book Store. All rights reserved.</span><a href="404.html">Privacy Policy · Terms of Use</a>
       </div>
     </footer>
     <div class="toast" role="status"></div>

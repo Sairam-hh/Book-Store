@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Categories — Stackly Book Store</title>
     <meta name="description" content="Explore book categories from fiction and poetry to business and science." />
-    <link rel="icon" href="../favicon.png" />
+    <link rel="icon" href="favicon.png" />
     <style>
       * {
         box-sizing: border-box;
@@ -208,7 +208,7 @@
         display: flex;
         align-items: center;
         padding: 120px clamp(24px, 8vw, 130px) 70px;
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .hero-content {
         max-width: 720px;
@@ -261,7 +261,7 @@
         padding: 160px clamp(24px, 8vw, 130px) 70px;
         display: flex;
         align-items: end;
-        background-image: url("assets/editorial-books.webp");
+        background-image: url("assets/editorial-books (1).webp");
       }
       .page-hero h1 {
         font-size: clamp(48px, 7vw, 82px);
@@ -277,7 +277,7 @@
         margin: auto;
       }
       .section {
-        padding: 95px 0;
+        padding: 45px 0;
       }
       .section.dark {
         background: #0a2a21;
@@ -420,7 +420,7 @@
       }
       .promo {
         min-height: 500px;
-        background: url("assets/editorial-books.webp") center/cover;
+        background: url("assets/editorial-books (1).webp") center/cover;
         display: flex;
         align-items: center;
         padding: 50px;
@@ -471,13 +471,13 @@
         margin: 0;
       }
       .category:nth-child(3n + 1) {
-        background-image: url("assets/books-display.webp");
+        background-image: url("assets/categories-mosaic (1).webp");
       }
       .category:nth-child(3n + 2) {
-        background-image: url("assets/reader.webp");
+        background-image: url("assets/reader (1).webp");
       }
       .category:nth-child(3n) {
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .split {
         display: grid;
@@ -553,7 +553,7 @@
         color: #fff;
         background:
           linear-gradient(#082018a6, #082018d9),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
       }
       .final h2 {
         font-size: clamp(50px, 8vw, 95px);
@@ -661,7 +661,7 @@
         min-height: 380px;
         background:
           linear-gradient(#17382ccf, #17382ccf),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
         color: #fff;
         display: grid;
         place-items: center;
@@ -920,49 +920,66 @@
         }
       }
       .page-hero {
-        background-image: url("assets/categories-mosaic.webp");
+        background-image: url("assets/categories-mosaic (1).webp");
       }
       .category:nth-child(1) {
-        background-image: url("assets/category-1.webp");
+        background-image: url("assets/category-1 (1).webp");
       }
       .category:nth-child(2) {
-        background-image: url("assets/category-2.webp");
+        background-image: url("assets/category-2 (1).webp");
       }
       .category:nth-child(3) {
-        background-image: url("assets/category-3.webp");
+        background-image: url("assets/category-3 (1).webp");
       }
       .category:nth-child(4) {
-        background-image: url("assets/category-4.webp");
+        background-image: url("assets/category-4 (1).webp");
       }
       .category:nth-child(5) {
-        background-image: url("assets/category-5.webp");
+        background-image: url("assets/category-5 (1).webp");
       }
       .category:nth-child(6) {
-        background-image: url("assets/category-6.webp");
+        background-image: url("assets/category-6 (1).webp");
       }
       .category:nth-child(7) {
-        background-image: url("assets/category-7.webp");
+        background-image: url("assets/category-7 (1).webp");
       }
       .category:nth-child(8) {
-        background-image: url("assets/category-8.webp");
+        background-image: url("assets/category-8 (1).webp");
       }
       .category:nth-child(9) {
-        background-image: url("assets/category-9.webp");
+        background-image: url("assets/category-9 (1).webp");
       }
       .category:nth-child(10) {
-        background-image: url("assets/category-10.webp");
+        background-image: url("assets/category-10 (1).webp");
       }
       .category:nth-child(11) {
-        background-image: url("assets/category-11.webp");
+        background-image: url("assets/category-11 (1).webp");
       }
       .category:nth-child(12) {
-        background-image: url("assets/category-12.webp");
+        background-image: url("assets/category-12 (1).webp");
+      }
+      /* Dark section: readable feature cards */
+      .dark .feature {
+        background: #ffffff0d;
+        border-color: #ffffff26;
+        color: #f7f0df;
+      }
+      .dark .feature h3 {
+        color: #f1d98d;
+      }
+      .dark .feature p {
+        margin: 0;
+        color: #ccc4b4;
+      }
+      .dark .feature:hover {
+        border-color: #c8a85d;
+        box-shadow: 0 20px 35px #0006;
       }
     </style>
   </head>
   <body>
     <header class="site-header" id="header">
-      <a class="brand" href="index.html"><img src="assets/logo.webp" alt="Stackly Book Store" /></a>
+      <a class="brand" href="index.html"><img src="./assets/stackly-logo-white (1).webp" alt="Stackly Book Store" /></a>
       <nav aria-label="Main navigation">
         <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="categories.html">Categories</a
         ><a href="about.html">About Us</a><a href="contact.html">Contact</a>
@@ -974,7 +991,7 @@
       </div>
     </header>
     <div class="mobile-panel" aria-hidden="true">
-      <button class="close" aria-label="Close menu">×</button><img src="assets/logo.webp" alt="Stackly" /><a
+      <button class="close" aria-label="Close menu">×</button><img src="./assets/stackly-logo-white (1).webp" alt="Stackly" /><a
         href="index.html"
         >Home</a
       ><a href="shop.html">Shop</a><a href="categories.html">Categories</a><a href="about.html">About Us</a
@@ -1000,80 +1017,80 @@
             <span>120 books</span>
             <h3>Fiction</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>137 books</span>
             <h3>Romance</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>154 books</span>
             <h3>Mystery & Thriller</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>171 books</span>
             <h3>Fantasy</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>188 books</span>
             <h3>Self Help</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>205 books</span>
             <h3>Business</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>222 books</span>
             <h3>Biography</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>239 books</span>
             <h3>Children</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>256 books</span>
             <h3>Academic</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>273 books</span>
             <h3>History</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>290 books</span>
             <h3>Science</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
           <article class="category reveal">
             <span>307 books</span>
             <h3>Poetry</h3>
             <p>Remarkable voices and essential reads.</p>
-            <a href="shop.html">Explore →</a>
+            <a href="404.html">Explore →</a>
           </article>
         </div>
       </section>
       <section class="split">
         <img
           loading="lazy"
-          src="assets/categories-mosaic.webp"
+          src="assets/categories-mosaic (1).webp"
           alt="Four reading worlds represented through books and objects"
         />
         <div class="split-content">
@@ -1084,7 +1101,7 @@
             shaped to make the first step easy.
           </p>
           <p>Each collection pairs accessible introductions with deeper, more surprising works.</p>
-          <a class="btn" href="shop.html">Browse all books</a>
+          <a class="btn" href="404.html">Browse all books</a>
         </div>
       </section>
       <section class="section dark">
@@ -1107,11 +1124,11 @@
     <footer>
       <div class="footer-grid">
         <div>
-          <img class="footer-logo" src="assets/logo.webp" alt="Stackly" />
+          <img class="footer-logo" src="./assets/stackly-logo-white (1).webp" alt="Stackly" />
           <p>Stories, ideas and knowledge for every curious mind.</p>
           <div class="social">
-            <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a
-            ><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="LinkedIn">in</a>
+            <a href="404.html" aria-label="Facebook">f</a><a href="404.html" aria-label="Instagram">◎</a
+            ><a href="404.html" aria-label="X">𝕏</a><a href="404.html" aria-label="LinkedIn">in</a>
           </div>
         </div>
         <div>
@@ -1121,8 +1138,8 @@
         </div>
         <div>
           <h3>Book Store</h3>
-          <a href="shop.html">New Arrivals</a><a href="shop.html">Best Sellers</a><a href="shop.html">Featured Books</a
-          ><a href="shop.html">Offers</a><a href="shop.html">Wishlist</a>
+          <a href="404.html">New Arrivals</a><a href="404.html">Best Sellers</a><a href="404.html">Featured Books</a
+          ><a href="404.html">Offers</a><a href="404.html">Wishlist</a>
         </div>
         <div>
           <h3>Visit</h3>
@@ -1133,7 +1150,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Book Store. All rights reserved.</span><span>Privacy Policy · Terms of Use</span>
+        <span>© 2026 Stackly Book Store. All rights reserved.</span><a href="404.html">Privacy Policy · Terms of Use</a>
       </div>
     </footer>
     <div class="toast" role="status"></div>

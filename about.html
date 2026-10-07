@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>About Us — Stackly Book Store</title>
     <meta name="description" content="Meet Stackly Book Store, where meaningful books and curious readers connect." />
-    <link rel="icon" href="../favicon.png" />
+    <link rel="icon" href="favicon.png" />
     <style>
       * {
         box-sizing: border-box;
@@ -208,7 +208,7 @@
         display: flex;
         align-items: center;
         padding: 120px clamp(24px, 8vw, 130px) 70px;
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .hero-content {
         max-width: 720px;
@@ -261,7 +261,7 @@
         padding: 160px clamp(24px, 8vw, 130px) 70px;
         display: flex;
         align-items: end;
-        background-image: url("assets/editorial-books.webp");
+        background-image: url("assets/editorial-books (1).webp");
       }
       .page-hero h1 {
         font-size: clamp(48px, 7vw, 82px);
@@ -277,7 +277,7 @@
         margin: auto;
       }
       .section {
-        padding: 95px 0;
+        padding: 45px 0;
       }
       .section.dark {
         background: #0a2a21;
@@ -420,7 +420,7 @@
       }
       .promo {
         min-height: 500px;
-        background: url("assets/editorial-books.webp") center/cover;
+        background: url("assets/editorial-books (1).webp") center/cover;
         display: flex;
         align-items: center;
         padding: 50px;
@@ -471,13 +471,13 @@
         margin: 0;
       }
       .category:nth-child(3n + 1) {
-        background-image: url("assets/books-display.webp");
+        background-image: url("assets/categories-mosaic (1).webp");
       }
       .category:nth-child(3n + 2) {
-        background-image: url("assets/reader.webp");
+        background-image: url("assets/reader (1).webp");
       }
       .category:nth-child(3n) {
-        background-image: url("assets/library-hero.webp");
+        background-image: url("assets/library-hero (1).webp");
       }
       .split {
         display: grid;
@@ -553,7 +553,7 @@
         color: #fff;
         background:
           linear-gradient(#082018a6, #082018d9),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
       }
       .final h2 {
         font-size: clamp(50px, 8vw, 95px);
@@ -661,7 +661,7 @@
         min-height: 380px;
         background:
           linear-gradient(#17382ccf, #17382ccf),
-          url("assets/library-hero.webp") center/cover;
+          url("assets/library-hero (1).webp") center/cover;
         color: #fff;
         display: grid;
         place-items: center;
@@ -920,13 +920,122 @@
         }
       }
       .page-hero {
-        background-image: url("assets/our-story.webp");
+        background-image: url("assets/our-story (1).webp");
+      }
+
+      /* About page additions */
+      .dark .feature {
+        background: #ffffff0d;
+        border-color: #ffffff26;
+        color: #f7f0df;
+      }
+      .dark .feature h3 {
+        color: #f1d98d;
+      }
+      .dark .feature p {
+        color: #ccc4b4;
+        margin: 0;
+      }
+      .split.reverse > img {
+        order: 2;
+      }
+      .timeline {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .milestone {
+        padding: 26px 24px;
+        border-top: 3px solid #b89549;
+        background: #f8f3e9;
+        border-left: 1px solid #d7cdb7;
+        border-right: 1px solid #d7cdb7;
+        border-bottom: 1px solid #d7cdb7;
+      }
+      .milestone b {
+        font-size: 40px;
+        font-weight: 400;
+        color: #957126;
+        line-height: 1;
+      }
+      .milestone h3 {
+        margin: 12px 0 6px;
+        font-size: 21px;
+      }
+      .milestone p {
+        margin: 0;
+        color: #5d5c52;
+      }
+      .team-card {
+        padding: 28px 24px;
+        border: 1px solid #ffffff26;
+        background: #ffffff0d;
+        transition: 0.3s;
+      }
+      .team-card:hover {
+        transform: translateY(-5px);
+        border-color: #c8a85d;
+      }
+      .team-card .avatar {
+        width: 62px;
+        height: 62px;
+        font-size: 18px;
+        background: #c8a85d;
+        color: #08261d;
+        margin-bottom: 16px;
+      }
+      .team-card h3 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 400;
+      }
+      .team-card small {
+        display: block;
+        margin: 4px 0 12px;
+        font: 700 11px Arial, sans-serif;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: #d7b96e;
+      }
+      .team-card p {
+        margin: 0;
+        color: #ccc4b4;
+      }
+      .final {
+        padding: 70px 24px;
+      }
+      .final-copy {
+        max-width: 560px;
+        margin: 18px auto 28px;
+        font-size: 19px;
+        color: #eee6d8;
+      }
+      .final-actions {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .final-actions .btn.outline:hover {
+        background: #ffffff1f;
+        color: #fff;
+      }
+      @media (max-width: 900px) {
+        .timeline {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .split.reverse > img {
+          order: 0;
+        }
+      }
+      @media (max-width: 600px) {
+        .timeline {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
     <header class="site-header" id="header">
-      <a class="brand" href="index.html"><img src="assets/logo.webp" alt="Stackly Book Store" /></a>
+      <a class="brand" href="index.html"><img src="assets/stackly-logo-white (1).webp" alt="Stackly Book Store" /></a>
       <nav aria-label="Main navigation">
         <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="categories.html">Categories</a
         ><a href="about.html">About Us</a><a href="contact.html">Contact</a>
@@ -938,7 +1047,7 @@
       </div>
     </header>
     <div class="mobile-panel" aria-hidden="true">
-      <button class="close" aria-label="Close menu">×</button><img src="assets/logo.webp" alt="Stackly" /><a
+      <button class="close" aria-label="Close menu">×</button><img src="assets/stackly-logo-white (1).webp" alt="Stackly" /><a
         href="index.html"
         >Home</a
       ><a href="shop.html">Shop</a><a href="categories.html">Categories</a><a href="about.html">About Us</a
@@ -955,21 +1064,26 @@
         <div>
           <span class="eyebrow">Our story</span>
           <h1>More Than a Bookstore.<br />A Place for Ideas.</h1>
+          <p>
+            Since 2016, Stackly has helped readers find books worth keeping, from timeless classics to bold new voices.
+          </p>
         </div>
       </section>
       <section class="split">
-        <img src="assets/reading-desk.webp" alt="A thoughtful reading desk in the Stackly library" />
+        <img src="assets/reading-desk (1).webp" alt="A thoughtful reading desk in the Stackly library" />
         <div class="split-content">
           <span class="eyebrow">Since 2016</span>
           <h2>Books chosen with intention.</h2>
           <p>
-            Stackly Book Store began with a simple belief: finding a meaningful book should feel as memorable as reading
-            one. We connect curious readers with enduring stories, courageous ideas and editions worth keeping.
+            Stackly Book Store began in a small Indiranagar shop with a simple belief: finding a meaningful book should
+            feel as memorable as reading one. We connect curious readers with enduring stories, courageous ideas and
+            editions worth keeping.
           </p>
           <p>
-            Every title is considered by readers, for readers—balancing beloved voices with discoveries from beyond the
+            Every title is considered by readers, for readers, balancing beloved voices with discoveries from beyond the
             bestseller list.
           </p>
+          <p><a class="btn" href="404.html">Browse the Shop</a></p>
         </div>
       </section>
       <section class="section dark">
@@ -984,19 +1098,19 @@
           <div class="grid grid-4">
             <article class="feature">
               <h3>Curated Collection</h3>
-              <p>Chosen for substance, craft and relevance.</p>
+              <p>Every book is chosen for substance, craft and relevance, never just because it is trending.</p>
             </article>
             <article class="feature">
               <h3>Authentic Books</h3>
-              <p>Original editions from trusted publishers.</p>
+              <p>Original editions sourced directly from trusted publishers and distributors.</p>
             </article>
             <article class="feature">
               <h3>Fast Delivery</h3>
-              <p>Careful packing and dependable dispatch.</p>
+              <p>Careful packing and dependable dispatch, usually within one business day.</p>
             </article>
             <article class="feature">
               <h3>Easy Returns</h3>
-              <p>A reassuring seven-day return promise.</p>
+              <p>A reassuring seven-day return promise on unread books in original condition.</p>
             </article>
           </div>
         </div>
@@ -1004,19 +1118,46 @@
       <section class="section">
         <div class="wrap grid stats">
           <div class="stat reveal"><b data-target="10000">0</b><span>Books</span></div>
-          <div class="stat reveal"><b data-target="25000">0</b><span>Readers</span></div>
-          <div class="stat reveal"><b data-target="500">0</b><span>Authors</span></div>
-          <div class="stat reveal"><b data-target="49">0</b><span>Rating / 10</span></div>
+          <div class="stat reveal"><b data-target="25000">0</b><span>Happy Readers</span></div>
+          <div class="stat reveal"><b data-target="500">0</b><span>Authors &amp; Publishers</span></div>
+          <div class="stat reveal"><b data-target="49">0</b><span>Average Reader Rating</span></div>
         </div>
       </section>
-      <section class="final">
-        <div>
-          <h2>Find Your Next Favorite Book.</h2>
-          <a class="btn" href="shop.html">Explore the Collection</a>
+      <section class="section journey">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Our journey</span>
+              <h2 class="section-title">Ten Years of Reading Together</h2>
+            </div>
+            <p class="section-copy">From one small shelf to a community of readers across the country.</p>
+          </div>
+          <div class="grid timeline">
+            <div class="milestone">
+              <b>2016</b>
+              <h3>The First Shelf</h3>
+              <p>Stackly opens its doors in Indiranagar with a few hundred hand-picked titles.</p>
+            </div>
+            <div class="milestone">
+              <b>2018</b>
+              <h3>Online Store</h3>
+              <p>Readers outside the city begin ordering through our website with careful, protective packing.</p>
+            </div>
+            <div class="milestone">
+              <b>2021</b>
+              <h3>10,000 Titles</h3>
+              <p>The collection crosses ten thousand books and monthly author evenings begin in store.</p>
+            </div>
+            <div class="milestone">
+              <b>2026</b>
+              <h3>A Reader Community</h3>
+              <p>Over 25,000 readers now use wishlists, saved carts and personal dashboards to plan what to read next.</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="split">
-        <img loading="lazy" src="assets/our-story.webp" alt="Stackly booksellers curating the collection" />
+      <section class="split reverse">
+        <img loading="lazy" src="./assets/library-hero (1).webp" alt="Stackly booksellers curating the collection" />
         <div class="split-content">
           <span class="eyebrow">The people behind the shelves</span>
           <h2>Read by Us. Chosen for You.</h2>
@@ -1024,7 +1165,7 @@
             Our team includes lifelong booksellers, educators, designers and enthusiastic margin-note makers. Every
             week, we gather around one table to discuss what deserves a place in the store.
           </p>
-          <p>That human conversation—not an algorithm alone—is the heart of our collection.</p>
+          <p>That human conversation, not an algorithm alone, is the heart of our collection.</p>
         </div>
       </section>
       <section class="section">
@@ -1034,20 +1175,68 @@
               <span class="eyebrow">Our principles</span>
               <h2 class="section-title">How We Curate</h2>
             </div>
+            <p class="section-copy">Three ideas guide every book we stock and every recommendation we make.</p>
           </div>
           <div class="grid grid-3">
             <article class="feature">
               <h3>Lasting Ideas</h3>
-              <p>Books that reward attention and remain relevant after the final page.</p>
+              <p>Books that reward attention and remain relevant long after the final page.</p>
             </article>
             <article class="feature">
               <h3>Many Voices</h3>
-              <p>A wider literary world, spanning regions, traditions and lived experiences.</p>
+              <p>A wider literary world, spanning regions, languages, traditions and lived experiences.</p>
             </article>
             <article class="feature">
               <h3>Beautiful Objects</h3>
-              <p>Typography, paper and binding matter because reading is tactile.</p>
+              <p>Typography, paper and binding matter, because reading is a tactile pleasure.</p>
             </article>
+          </div>
+        </div>
+      </section>
+      <section class="section dark">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Meet the team</span>
+              <h2 class="section-title">Your Booksellers</h2>
+            </div>
+            <p class="section-copy">Ask any of us for a recommendation. We love being asked.</p>
+          </div>
+          <div class="grid grid-4">
+            <article class="team-card">
+              <div class="avatar">AR</div>
+              <h3>Ananya Rao</h3>
+              <small>Founder &amp; Head Curator</small>
+              <p>Started Stackly with a single shelf of favourites and still reads every new catalogue.</p>
+            </article>
+            <article class="team-card">
+              <div class="avatar">RM</div>
+              <h3>Rohan Mehta</h3>
+              <small>Fiction &amp; Literature</small>
+              <p>Finds the quiet novels and bold debuts that deserve a wider audience.</p>
+            </article>
+            <article class="team-card">
+              <div class="avatar">MI</div>
+              <h3>Meera Iyer</h3>
+              <small>Children &amp; Young Readers</small>
+              <p>Runs our weekend reading circles and builds first-bookshelf lists for families.</p>
+            </article>
+            <article class="team-card">
+              <div class="avatar">AN</div>
+              <h3>Arjun Nair</h3>
+              <small>Customer Experience</small>
+              <p>Makes sure every order is packed with care and every question gets a human answer.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="final">
+        <div>
+          <h2>Find Your Next Favorite Book.</h2>
+          <p class="final-copy">Browse thousands of titles or ask our booksellers for a personal recommendation.</p>
+          <div class="final-actions">
+            <a class="btn" href="404.html">Explore the Collection</a>
+            <a class="btn outline" href="404.html">Talk to a Bookseller</a>
           </div>
         </div>
       </section>
@@ -1055,11 +1244,11 @@
     <footer>
       <div class="footer-grid">
         <div>
-          <img class="footer-logo" src="assets/logo.webp" alt="Stackly" />
+          <img class="footer-logo" src="./assets/stackly-logo-white (1).webp" alt="Stackly" />
           <p>Stories, ideas and knowledge for every curious mind.</p>
           <div class="social">
-            <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a
-            ><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="LinkedIn">in</a>
+            <a href="404.html" aria-label="Facebook">f</a><a href="404.html" aria-label="Instagram">◎</a
+            ><a href="404.html" aria-label="X">𝕏</a><a href="404.html" aria-label="LinkedIn">in</a>
           </div>
         </div>
         <div>
@@ -1069,8 +1258,8 @@
         </div>
         <div>
           <h3>Book Store</h3>
-          <a href="shop.html">New Arrivals</a><a href="shop.html">Best Sellers</a><a href="shop.html">Featured Books</a
-          ><a href="shop.html">Offers</a><a href="shop.html">Wishlist</a>
+          <a href="404.html">New Arrivals</a><a href="404.html">Best Sellers</a><a href="404.html">Featured Books</a
+          ><a href="404.html">Offers</a><a href="404.html">Wishlist</a>
         </div>
         <div>
           <h3>Visit</h3>
@@ -1081,7 +1270,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Book Store. All rights reserved.</span><span>Privacy Policy · Terms of Use</span>
+        <span>© 2026 Stackly Book Store. All rights reserved.</span><a href="404.html">Privacy Policy · Terms of Use</a>
       </div>
     </footer>
     <div class="toast" role="status"></div>
